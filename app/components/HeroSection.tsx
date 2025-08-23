@@ -38,7 +38,7 @@ export default function HeroSection() {
             </div>
 
             {/* Visual Divider */}
-            <div className="order-3 col-span-full md:col-start-2 md:col-end-10 md:row-start-2">
+            <div className="order-3 col-span-full md:col-start-2 md:col-end-10 md:row-start-2 mt-3 md:mt-10">
                 <LineSeperator/>
             </div>
         </div>
