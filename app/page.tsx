@@ -1,6 +1,7 @@
 import HeroSection from "./components/HeroSection";
 import NavBar from "./components/NavBar";
 import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
 
 
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <div className="mt-20 mx-10 sm:mx-15">
         <HeroSection/>
         <AboutSection/>
+        <ContactSection/>
       </div>
     
     </main>

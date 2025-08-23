@@ -15,7 +15,9 @@ export default function HeroSection() {
 
             <div className="text-white mb-4 text-base sm:text-lg lg:text-xl my-6">
                 <p>
-                I&apos;m a 2nd year <span className="text-[#4ba351]">Computer Science Undergraduate</span> at Kings College London working towards being a professional in Software Engineering. My goal is to be able to build anything I can think up and hone my skills in programming to best it can be.
+                I&apos;m a 2nd year <span className="text-[#4ba351]">Computer Science Undergraduate</span> at Kings College London 
+                working towards being a professional in Software Engineering. My goal is to be able to build anything I can think up 
+                and hone my skills in programming to best it can be.
                 </p>
                 <p className="my-3">
                     <span className="text-[#4ba351]">Read on</span> to learn more about my personal journey.
