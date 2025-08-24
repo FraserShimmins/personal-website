@@ -11,7 +11,7 @@ export default function AboutSection(){
                         <div className="flex-grow">
                             <LineSeperator />
                         </div>
-                        <p className="px-4 text-white text-center font-bold text-4xl sm:text-5xl lg:text-6xl whitespace-nowrap">
+                        <p id="about-section" className="px-4 text-white text-center font-bold text-4xl sm:text-5xl lg:text-6xl whitespace-nowrap scroll-mt-24">
                             About Me
                         </p>
                         <div className="flex-grow">
