@@ -1,4 +1,6 @@
 import LineSeperator from "../ui/LineSeperator";
+import Image from "next/image";
+import { Download, Eye } from "lucide-react";
 
 export default function AboutSection(){
     return (
@@ -41,18 +43,38 @@ export default function AboutSection(){
                     </p>
                 </div>
 
-                <div className="flex flex-col justify-evenly md:col-start-2 md:col-end-5 md:row-start-2 md:row-span-3">
-                    <button className="px-6 py-3 w-full rounded-full mr-4 bg-gradient-to-br from-purple-300 via bg-purple-500 to-purple-800 hover:bg-slate-200 text-white">
-                        Download My CV
+                <div className="contents md:flex md:flex-col md:justify-center md:gap-12 md:col-start-2 md:col-end-5 md:row-start-2 md:row-span-3">
+                    <button className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
+                            <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
+                                <Download className="w-[1em] h-[1em]"/>
+                                <p className="whitespace-nowrap text-left">Download My CV</p>
+                            </div>
                     </button>
-                    <button className="px-6 py-3 w-full rounded-full mr-4 bg-gradient-to-br from-purple-300 via bg-purple-500 to-purple-800 hover:bg-slate-200 text-white">
-                        Check Out My Blog
+                    
+                    <button className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
+                        <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
+                            <Eye className="w-[1em] h-[1em]"/>
+                            <p className="whitespace-nowrap text-left">Checkout My Blog</p>
+                        </div>
                     </button>
                 </div>
             
-                <button className="md:col-start-2 md:col-end-5 md:row-start-5 md:row-span-1 px-6 py-3 w-full rounded-full mr-4 bg-gradient-to-br from-purple-300 via bg-purple-500 to-purple-800 hover:bg-slate-200 text-white">
-                    GitHub
-                </button>
+                <div className="md:col-start-2 md:col-end-5 md:row-start-5 md:row-span-1">
+                    <button className="flex items-center justify-start gap-5 md:gap-10 px-2 py-2 w-fill rounded-2xl text-white hover:bg-[#2d755c]/10 active:bg-[#2d755c]/20">
+                    
+                        <div className="relative w-10 lg:w-20 aspect-square place-self-center">
+                            <Image
+                                src="/images/github-mark-white.svg"
+                                alt="Gmail Logo"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+
+                        <p className="whitespace-nowrap text-left text-base sm:text-lg lg:text-xl">FraserShimmins</p>
+                    </button>
+                </div>
+                
             </div>
         </section>
     );

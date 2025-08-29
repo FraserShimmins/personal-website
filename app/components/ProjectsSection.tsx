@@ -35,8 +35,11 @@ export default function AboutSection(){
                     </div>
                 </div>
 
-                <div className="flex justify-center md:row-start-2 md:row-span-1 md:col-start-1 md:col-end-10">
+                <div className="flex justify-start md:row-start-2 md:row-span-1 md:col-start-1 md:col-end-10">
                     {/*<ProjectFilter/>*/}
+                    
+
+                    {/* Filter Check Boxes */}
                 </div>
             </div>
 
