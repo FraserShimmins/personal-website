@@ -1,6 +1,7 @@
 import LineSeperator from "../ui/LineSeperator";
 import ProjectCard from "../ui/ProjectCard";
-//import ProjectFilter from "../ui/ProjectFilter"
+import ProjectFilter from "../ui/ProjectFilter"
+import FilterCheckbox from "../ui/FilterCheckbox";
 
 const projectsData = [
     {
@@ -35,11 +36,38 @@ export default function AboutSection(){
                     </div>
                 </div>
 
-                <div className="flex justify-start md:row-start-2 md:row-span-1 md:col-start-1 md:col-end-10">
-                    {/*<ProjectFilter/>*/}
+                <div className="flex justify-start gap-10 md:row-start-2 md:row-span-1 md:col-start-1 md:col-end-10 mb-10">
                     
-
+                    {/* Project Filter Combobox*/}
+                    <div className="flex flex-col justify-start">
+                        <p className="text-[#4ba351] font-bold mb-4 text-sm sm:text-lg lg:text-xl">Order By:</p>
+                        <ProjectFilter/>
+                    </div>
+            
                     {/* Filter Check Boxes */}
+                    <div className="flex flex-col justify-start">
+                        <p className="text-[#4ba351] font-bold mb-4 text-sm sm:text-lg lg:text-xl">Order By:</p>
+                        
+                        {/* Checkboxes */}
+                        <div className="flex justify-center items-center gap-4 text-base sm:text-lg lg:text-xl text-white">
+                            {/* Box #1 */}
+                            <div className="flex flex-col justify-center items-center">
+                                <p>Solo Projects</p>
+                                <FilterCheckbox/>
+                            </div>
+                            {/* Box #2 */}
+                            <div className="flex flex-col justify-center items-center">
+                                <p>Group Projects</p>
+                                <FilterCheckbox/>
+                            </div>
+                            {/* Box #3 */}
+                            <div className="flex flex-col justify-center items-center">
+                                <p>University Course Work</p>
+                                <FilterCheckbox/>
+                            </div>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
 
