@@ -1,6 +1,7 @@
 import LineSeperator from "../ui/LineSeperator";
 import { Send, Search, Copy, Coffee } from 'lucide-react';
 import Image from "next/image";
+import Link from 'next/link';
 
 export default function ContactSection(){
     return (
@@ -87,12 +88,12 @@ export default function ContactSection(){
                 {/* Email Me Section */}
                 <div className="flex flex-col justify-start gap-6 mt-5 md:col-start-6 md:col-end-11 md:row-start-2 md:row-end-5">
 
-                    <button className="px-2 py-2 w-fill rounded-xl bg-[#2d755c] text-white">
+                    <Link href="/message" className="px-2 py-2 w-fill rounded-xl bg-[#2d755c] text-white">
                         <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-xl px-5 py-8 text-xl sm:text-3xl lg:text-4xl">
                             <Send className="w-[1em] h-[1em]"/>
                             <p className="whitespace-nowrap">Send Me A Message</p>
                         </div>
-                    </button>
+                    </Link>
 
                     <p className="text-white text-left text-base sm:text-lg lg:text-xl mt-6">
                         All messages are welcomed! Whether you want to try network, recruit, or simply say hello, I will read and 

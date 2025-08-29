@@ -36,7 +36,7 @@ export default function AboutSection(){
                     </div>
                 </div>
 
-                <div className="flex justify-start gap-10 md:row-start-2 md:row-span-1 md:col-start-1 md:col-end-10 mb-10">
+                <div className="flex flex-col md:flex-row justify-start gap-10 md:row-start-2 md:row-span-1 md:col-start-1 md:col-end-10 mb-10">
                     
                     {/* Project Filter Combobox*/}
                     <div className="flex flex-col justify-start">
@@ -46,7 +46,7 @@ export default function AboutSection(){
             
                     {/* Filter Check Boxes */}
                     <div className="flex flex-col justify-start">
-                        <p className="text-[#4ba351] font-bold mb-4 text-sm sm:text-lg lg:text-xl">Order By:</p>
+                        <p className="text-[#4ba351] font-bold mb-4 text-sm sm:text-lg lg:text-xl">Filters:</p>
                         
                         {/* Checkboxes */}
                         <div className="flex justify-center items-center gap-4 text-base sm:text-lg lg:text-xl text-white">

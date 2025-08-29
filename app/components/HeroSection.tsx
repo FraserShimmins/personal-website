@@ -9,7 +9,7 @@ export default function HeroSection() {
 
             {/* Text (2nd on mobile, 1st on md+) */}
             <div className="order-2 md:order-1 md:col-span-7 place-self-center max-w-full text-left">
-            <h1 className="text-white font-bold mb-4 text-4xl sm:text-5xl lg:text-6xl">
+            <h1 id="hero-section" className="scroll-mt-35 text-white font-bold mb-4 text-4xl sm:text-5xl lg:text-6xl">
                 Hey, I&apos;m <span className="text-[#4ba351]">Fraser</span>
             </h1>
 
