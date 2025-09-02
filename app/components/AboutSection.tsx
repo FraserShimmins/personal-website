@@ -1,6 +1,7 @@
 import LineSeperator from "../ui/LineSeperator";
 import Image from "next/image";
 import { Download, Eye } from "lucide-react";
+import Link from 'next/link';
 
 export default function AboutSection(){
     return (
@@ -60,7 +61,7 @@ export default function AboutSection(){
                 </div>
             
                 <div className="md:col-start-2 md:col-end-5 md:row-start-5 md:row-span-1">
-                    <button className="flex items-center justify-start gap-5 md:gap-10 px-2 py-2 w-fill rounded-2xl text-white hover:bg-[#2d755c]/10 active:bg-[#2d755c]/20">
+                    <Link href="https://github.com/FraserShimmins" className="flex items-center justify-start gap-5 md:gap-10 px-2 py-2 w-fill rounded-2xl text-white hover:bg-[#2d755c]/10 active:bg-[#2d755c]/20">
                     
                         <div className="relative w-10 lg:w-20 aspect-square place-self-center">
                             <Image
@@ -72,7 +73,7 @@ export default function AboutSection(){
                         </div>
 
                         <p className="whitespace-nowrap text-left text-base sm:text-lg lg:text-xl">FraserShimmins</p>
-                    </button>
+                    </Link>
                 </div>
                 
             </div>

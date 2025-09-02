@@ -1,5 +1,6 @@
 import LineSeperator from "../ui/LineSeperator";
-import { Send, Search, Copy, Coffee } from 'lucide-react';
+import CopyEmail from "../ui/CopyEmail";
+import { Send, Search, Coffee } from 'lucide-react';
 import Image from "next/image";
 import Link from 'next/link';
 
@@ -37,12 +38,12 @@ export default function ContactSection(){
                             />
                         </div>
 
-                        <button className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
+                        <Link href="https://www.instagram.com/frasershim?igsh=eHlpbTB3bzFvdmg0&utm_source=qr" className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
                             <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
                                 <Search className="w-[1em] h-[1em]"/>
-                                <p className="whitespace-nowrap text-left">My LinkedIn</p>
+                                <p className="whitespace-nowrap text-left">My Instagram</p>
                             </div>
-                        </button>
+                        </Link>
                     </div>
                     
                     {/* LinkedIn Button */}
@@ -56,12 +57,12 @@ export default function ContactSection(){
                             />
                         </div>
 
-                        <button className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
+                        <Link href="https://www.linkedin.com/in/fraser-shimmins-644a24331/" className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
                             <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
                                 <Search className="w-[1em] h-[1em]"/>
-                                <p className="whitespace-nowrap text-left">My Instagram</p>
+                                <p className="whitespace-nowrap text-left">My LinkedIn</p>
                             </div>
-                        </button>
+                        </Link>
                     </div>
 
                     {/* Gmail Button */}
@@ -74,15 +75,9 @@ export default function ContactSection(){
                                 className="object-contain"
                             />
                         </div>
-
-                        <button className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
-                            <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
-                                <Copy className="w-[1em] h-[1em]"/>
-                                <p className="whitespace-nowrap text-left">My Email</p>
-                            </div>
-                        </button>
+                        
+                        <CopyEmail/>
                     </div>
-
                 </div>
 
                 {/* Email Me Section */}
@@ -112,12 +107,12 @@ export default function ContactSection(){
                 {/* Donation Button */}
 
                 <div className="flex justify-center col-span-full md:col-start-4 md:col-end-8 md:row-start-5 md:row-span-1">
-                    <button className="px-1 py-1 w-fill rounded-sm bg-[#b3826c] text-white col-span-full md:col-start-4 md:col-end-8 md:row-start-5 md:row-span-1 mt-3 md:mt-10">
+                    <Link href="https://buymeacoffee.com/frasershimmins" className="px-1 py-1 w-fill rounded-sm bg-[#b3826c] text-white col-span-full md:col-start-4 md:col-end-8 md:row-start-5 md:row-span-1 mt-3 md:mt-10">
                         <div className="flex items-center justify-center gap-4 bg-[#6F574E] hover:bg-[#5A3E2D] active:bg-[#3B281D] rounded-xl px-5 py-4 text-xl sm:text-3xl lg:text-4xl">
                             <p className="whitespace-nowrap">Treat Me To A Coffee</p>
                             <Coffee className="w-[1.5em] h-[1.5em]"/>
                         </div>
-                    </button>
+                    </Link>
                 </div>
                 
             </div>

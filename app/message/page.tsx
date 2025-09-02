@@ -3,7 +3,7 @@ export default function Page()
 {
     return(
         <main className="flex min-h-screen flex-col bg-[#00140d]">
-             <div className="mx-6 sm:mx-10 max-w-3xl w-full mt-20 mb-40">
+            <div className="mx-6 sm:mx-10 max-w-3xl w-full mt-20 mb-40">
                 <h1 className="text-white font-bold mb-6 text-4xl sm:text-5xl lg:text-6xl">
                     <span className="text-[#4ba351]">Message</span> Me
                 </h1>
