@@ -1,10 +1,11 @@
+import { Send } from 'lucide-react';
 
 export default function Page()
 {
     return(
         <main className="flex min-h-screen flex-col bg-[#00140d]">
-            <div className="mx-6 sm:mx-10 max-w-3xl w-full mt-20 mb-40">
-                <h1 className="text-white font-bold mb-6 text-4xl sm:text-5xl lg:text-6xl">
+            <div className="mx-6 sm:mx-10 w-fill mt-20 mb-40">
+                <h1 className="text-white font-bold mb-12 text-4xl sm:text-5xl lg:text-6xl">
                     <span className="text-[#4ba351]">Message</span> Me
                 </h1>
 
@@ -12,7 +13,9 @@ export default function Page()
                 <label htmlFor="email" className="block text-white mb-2 text-lg sm:text-xl">
                     Email:
                 </label>
-                <div className="rounded-full border-2 border-[#2d755c] p-1 mb-8">
+
+                <div className="flex items-start gap-12">
+                    <div className="rounded-full border-2 border-[#2d755c] p-1 mb-8 w-3xl">
                     <input
                         id="email"
                         type="email"
@@ -22,13 +25,20 @@ export default function Page()
                                 px-4 py-3 outline-none
                                 focus:ring-2 focus:ring-[#2d755c]"
                     />
+                    </div>
+
+                    <button className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
+                            <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
+                                <Send className="ml-[-5px] w-[3em] h-[3em]"/>
+                            </div>
+                    </button>
                 </div>
 
                 {/* Subject */}
                 <label htmlFor="subject" className="block text-white mb-2 text-lg sm:text-xl">
                     Subject:
                 </label>
-                <div className="rounded-full border-2 border-[#2d755c] p-1 mb-8">
+                <div className="rounded-full border-2 border-[#2d755c] p-1 mb-8 w-3xl">
                     <input
                         id="subject"
                         type="text"
