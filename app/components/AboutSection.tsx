@@ -45,19 +45,19 @@ export default function AboutSection(){
                 </div>
 
                 <div className="contents md:flex md:flex-col md:justify-center md:gap-12 md:col-start-2 md:col-end-5 md:row-start-2 md:row-span-3">
-                    <button className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
+                    <Link href="/placeholder" className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
                             <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
                                 <Download className="w-[1em] h-[1em]"/>
                                 <p className="whitespace-nowrap text-left">Download My CV</p>
                             </div>
-                    </button>
+                    </Link>
                     
-                    <button className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
+                    <Link href="/placeholder" className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
                         <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
                             <Eye className="w-[1em] h-[1em]"/>
                             <p className="whitespace-nowrap text-left">Checkout My Blog</p>
                         </div>
-                    </button>
+                    </Link>
                 </div>
             
                 <div className="md:col-start-2 md:col-end-5 md:row-start-5 md:row-span-1">
@@ -66,7 +66,7 @@ export default function AboutSection(){
                         <div className="relative w-10 lg:w-20 aspect-square place-self-center">
                             <Image
                                 src="/images/github-mark-white.svg"
-                                alt="Gmail Logo"
+                                alt="Github Logo"
                                 fill
                                 className="object-contain"
                             />

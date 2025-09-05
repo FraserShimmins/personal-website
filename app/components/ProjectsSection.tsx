@@ -13,9 +13,6 @@ const projectsData = [
     },
 ]
 
-
-
-
 export default function AboutSection(){
     return (
         <section>
