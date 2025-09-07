@@ -1,14 +1,12 @@
 import Link from 'next/link';
-//import Image from "next/image";
+import Image from 'next/image';
+import ImageCarousel from '../../ui/ImageCarousel';
 import { CalendarDays, CircleUserRound, CodeXml } from 'lucide-react';
-import { Card, CardContent } from "../../../shadcomponents/ui/card"
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "../../../shadcomponents/ui/carousel";
+
+const images = ["demo1.jpg", "demo2.jpg", "demo3.jpg"];
+
+
+
 
 export default function Page()
 {
@@ -49,40 +47,7 @@ export default function Page()
 
                 </div>
 
-                {/* PROJECT PHOTO SLIDER */}
-                <div className="flex justify-center relative overflow-hidden rounded-lg bg-[#181818] w-full px-15 h-60 md:h-75 lg:h-90 place-self-center">
-                    
-                    <Carousel className="w-full">
-                    <CarouselContent>
-                        {Array.from({ length: 5 }).map((_, index) => (
-                        <CarouselItem key={index}>
-                            <div className="p-1">
-                                <Card>
-                                    <CardContent className="flex items-center justify-center p-6">
-                                        <span className="text-4xl font-semibold">{index + 1}</span>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </CarouselItem>
-                        ))}
-
-                        {/* */}
-                        <CarouselItem key="6">
-                            <div className="p-1">
-                                <Card>
-                                    <CardContent className="flex items-center justify-center p-6">
-                                        <span className="text-4xl font-semibold">{6}</span>
-                                    </CardContent>
-                                </Card>
-                            </div>
-                        </CarouselItem>
-                    </CarouselContent>
-                    <CarouselPrevious />
-                    <CarouselNext />
-                    </Carousel>
-
-
-                </div>
+                <ImageCarousel images={images}/>
 
 
                 {/* PROJECT WRITE UP */}
