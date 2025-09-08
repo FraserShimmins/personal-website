@@ -12,6 +12,54 @@ const projectsData = [
         page: "PracticalPilot",
         tag:["Solo"],
     },
+    {
+        id: 2,
+        title: "Ghost Traveller",
+        description: "Unity 3D Point and Click puzzle game",
+        image: "GhostTraveller.svg",
+        page: "PracticalPilot",
+        tag:["Solo"],
+    },
+    {
+        id: 3,
+        title: "Heros & Horrors",
+        description: "Unity 2D 1v1 magic card game",
+        image: "HeroesAndHorrors.svg",
+        page: "PracticalPilot",
+        tag:["Solo"],
+    },
+    {
+        id: 4,
+        title: "Predator-Prey Simulation",
+        description: "A simulation of a closed ecosystem",
+        image: "PredatorPreySimulation.svg",
+        page: "PracticalPilot",
+        tag:["Solo"],
+    },
+    {
+        id: 5,
+        title: "Pollution Tracker",
+        description: "An interactive map of the pollution over the UK",
+        image: "PollutionTracker.svg",
+        page: "PracticalPilot",
+        tag:["Solo"],
+    },
+    {
+        id: 6,
+        title: "Assembly Lights",
+        description: "An assembly program used to control a set of LED lights to create animations",
+        image: "AssemblyLights.svg",
+        page: "PracticalPilot",
+        tag:["Solo"],
+    },
+    {
+        id: 7,
+        title: "FashTrack",
+        description: "Hackathon Mockup of a fashion recuitement app",
+        image: "FashTrack.png",
+        page: "PracticalPilot",
+        tag:["Solo"],
+    },
 ]
 
 export default function AboutSection(){
@@ -72,7 +120,7 @@ export default function AboutSection(){
             {/*Grid of Projects*/}
             <div className="grid md:grid-cols-3 gap-8 md:gap-12">
                 {projectsData.map((project) => <ProjectCard key={project.id} title={project.title} description={project.description} 
-                                                imgUrl={`/images/projectImages/${project.image}`}/>)    }
+                                                imgUrl={`/images/projectImages/${project.image}`} pageUrl={`/projects/${project.page}`}/>)    }
             </div>
         </section>
     );
