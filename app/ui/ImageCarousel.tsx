@@ -32,7 +32,7 @@ export default function ImageCarousel( { images }: Props) {
   return (
     <div className="relative w-full group">
         <Carousel setApi={setApi} opts={{ loop: true }} className="bg-black rounded-2xl">
-          <CarouselContent className="h-72">
+          <CarouselContent className="h-50 sm:h-90 ">
             {
               images.map((image : string) => (
                 <CarouselItem key={image} className="h-full">
