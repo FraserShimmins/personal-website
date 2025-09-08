@@ -29,7 +29,7 @@ export default function HeroSection() {
             <div className="order-1 md:order-2 md:col-span-3 flex justify-center">
             <div className="relative overflow-hidden rounded-full bg-[#181818] w-40 sm:w-56 lg:w-100 aspect-square place-self-center">
                 <Image
-                src="/images/heroicon.jpg"
+                src="/images/heroicon.JPG"
                 alt="hero image"
                 fill
                 className="object-cover object-top"
