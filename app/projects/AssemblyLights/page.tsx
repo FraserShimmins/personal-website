@@ -3,7 +3,7 @@ import ImageCarousel from '../../ui/ImageCarousel';
 import { CalendarDays, CircleUserRound, CodeXml } from 'lucide-react';
 
 const images = ["GhostTraveller1.png", "GhostTraveller2.png", "GhostTraveller3.png", "GhostTraveller4.png", 
-                "GhostTraveller5.png", "GhostTraveller6.png", "GhostTraveller7.png"];
+                "GhostTraveller5.png", "GhostTraveller6.png", "GhostTraveller7.png", "PracticalPilot8.png"];
 
 
 
@@ -26,7 +26,7 @@ export default function Page()
                     {/* Completion Time Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CalendarDays className="w-[2em] h-[2em]"/>
-                        Februrary 2024
+                        March 2024
                     </div>
 
                     <div className="rounded-full bg-white px-15 py-0.25 sm:p-1 sm:px-1"/>
@@ -80,7 +80,7 @@ export default function Page()
                 </div>
 
                 {/* BUTTON TO SEE GITHUB REPO */}
-                <Link href="https://github.com/FraserShimmins/puzzle-game-3d-unity" className="px-2 py-2 w-fit rounded-xl bg-[#2d755c] text-white">
+                <Link href="/projects/PracticalPilot" className="px-2 py-2 w-fit rounded-xl bg-[#2d755c] text-white">
                     <div className="bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-xl px-4 py-4 text-xl sm:text-3xl lg:text-4xl">
                         Check Out The Code!
                     </div>

@@ -17,15 +17,15 @@ const projectsData = [
         title: "Ghost Traveller",
         description: "Unity 3D Point and Click puzzle game",
         image: "GhostTraveller.svg",
-        page: "PracticalPilot",
+        page: "GhostTraveller",
         tag:["Solo"],
     },
     {
         id: 3,
-        title: "Heros & Horrors",
+        title: "Heroes & Horrors",
         description: "Unity 2D 1v1 magic card game",
         image: "HeroesAndHorrors.svg",
-        page: "PracticalPilot",
+        page: "HeroesAndHorrors",
         tag:["Solo"],
     },
     {
@@ -33,7 +33,7 @@ const projectsData = [
         title: "Predator-Prey Simulation",
         description: "A simulation of a closed ecosystem",
         image: "PredatorPreySimulation.svg",
-        page: "PracticalPilot",
+        page: "PredatorPreySimulation",
         tag:["Solo"],
     },
     {
@@ -41,7 +41,7 @@ const projectsData = [
         title: "Pollution Tracker",
         description: "An interactive map of the pollution over the UK",
         image: "PollutionTracker.svg",
-        page: "PracticalPilot",
+        page: "PollutionTracker",
         tag:["Solo"],
     },
     {
@@ -49,7 +49,7 @@ const projectsData = [
         title: "Assembly Lights",
         description: "An assembly program used to control a set of LED lights to create animations",
         image: "AssemblyLights.svg",
-        page: "PracticalPilot",
+        page: "AssemblyLights",
         tag:["Solo"],
     },
     {
@@ -57,7 +57,7 @@ const projectsData = [
         title: "FashTrack",
         description: "Hackathon Mockup of a fashion recuitement app",
         image: "FashTrack.png",
-        page: "PracticalPilot",
+        page: "FashTrack",
         tag:["Solo"],
     },
 ]
