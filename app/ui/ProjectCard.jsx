@@ -10,7 +10,7 @@ export default function ProjectCard({ imgUrl, title, description}){
                 <img
                     src={imgUrl}
                     alt={title}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-cover"
                 />
 
                 {/* Links */}

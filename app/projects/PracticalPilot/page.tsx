@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import ImageCarousel from '../../ui/ImageCarousel';
 import { CalendarDays, CircleUserRound, CodeXml } from 'lucide-react';
 
