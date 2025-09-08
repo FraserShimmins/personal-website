@@ -6,7 +6,8 @@ import { Send } from 'lucide-react';
 export default function EmailSection() {
     const [emailSubmitted, setEmailSubmitted] = useState(false);
 
-    const handleSubmit = async (e) => {
+    /*
+    const handleSubmit = async (e : React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         const data = {
             email: e.target.email.value,
@@ -37,7 +38,7 @@ export default function EmailSection() {
             setEmailSubmitted(true);
         }
     }
-
+    */
 
     return(
         <section className="flex min-h-screen flex-col bg-[#00140d]">
@@ -46,7 +47,7 @@ export default function EmailSection() {
                     <span className="text-[#4ba351]">Message</span> Me
                 </h1>
 
-                <form onSubmit={handleSubmit}>
+                <form> {/*onSubmit={handleSubmit}*/}
                     {
                         // If the email was submitted successfully, show a success message
                         emailSubmitted && (
