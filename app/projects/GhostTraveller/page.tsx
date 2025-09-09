@@ -42,7 +42,7 @@ export default function Page()
                     {/* Programming Language Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CodeXml className="w-[2em] h-[2em]"/>
-                        Python
+                        C# (Unity)
                     </div>
 
                 </div>

@@ -63,6 +63,8 @@ const projectsData = [
 ]
 
 export default function AboutSection(){
+    {/*const [tag, setTag] = useState("All");*/}
+
     return (
         <section>
             <div className="grid grid-cols-1 md:grid-cols-10 md:grid-rows-2 gap-6 mt-45">

@@ -2,8 +2,7 @@ import Link from 'next/link';
 import ImageCarousel from '../../ui/ImageCarousel';
 import { CalendarDays, CircleUserRound, CodeXml } from 'lucide-react';
 
-const images = ["GhostTraveller1.png", "GhostTraveller2.png", "GhostTraveller3.png", "GhostTraveller4.png", 
-                "GhostTraveller5.png", "GhostTraveller6.png", "GhostTraveller7.png", "PracticalPilot8.png"];
+const images = ["FashTrack1.png", "FashTrack2.png"];
 
 
 
@@ -17,7 +16,7 @@ export default function Page()
 
                 {/* TITLE OF PROJECT */}
                 <h1 className="text-[#4ba351] font-bold text-4xl sm:text-5xl lg:text-6xl">
-                    Ghost Traveller
+                    FashTrack
                 </h1>
 
                 {/* PROJECT SPECS */}
@@ -26,7 +25,7 @@ export default function Page()
                     {/* Completion Time Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CalendarDays className="w-[2em] h-[2em]"/>
-                        March 2024
+                        November 2024
                     </div>
 
                     <div className="rounded-full bg-white px-15 py-0.25 sm:p-1 sm:px-1"/>
@@ -34,7 +33,7 @@ export default function Page()
                     {/* Project Team Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CircleUserRound className="w-[2em] h-[2em]"/>
-                        Solo Project
+                        4 Person Project
                     </div>
 
                     <div className="rounded-full bg-white px-15 py-0.25 sm:p-1 sm:px-1"/>
@@ -42,7 +41,7 @@ export default function Page()
                     {/* Programming Language Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CodeXml className="w-[2em] h-[2em]"/>
-                        Python
+                        Nuxt.JS Website
                     </div>
 
                 </div>
@@ -54,33 +53,21 @@ export default function Page()
                 <div className="flex flex-col gap-5 justify-start rounded-xl w-full text-white text-sm md:text-lg lg:text-xl">
                     {/* Intro Paragraph*/}
                     <p>
-                        Ghost Traveller - A 3D Point-And-Click puzzle game.
+                        This project was made for the <span className="text-[#4ba351] font-bold">CMCI Hackathon 2024</span> (CultureHack)
                     </p>
 
                     <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
+                        FashTrack is a mockup of a website that helps people in the fashion industry apply for jobs. We used a <span className="text-[#4ba351] font-bold">Nuxt.JS 
+                        3.0 website</span> with a Serverless Functions backend to serve the site.
                     </p>
 
                     <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                    </p>
-
-                    <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
+                        For the backend, a <span className="text-[#4ba351] font-bold">mongoDB database</span> was used to store data about jobs, users and mentors.
                     </p>
                 </div>
 
                 {/* BUTTON TO SEE GITHUB REPO */}
-                <Link href="/projects/PracticalPilot" className="px-2 py-2 w-fit rounded-xl bg-[#2d755c] text-white">
+                <Link href="https://github.com/dylankainth/fashtrack" className="px-2 py-2 w-fit rounded-xl bg-[#2d755c] text-white">
                     <div className="bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-xl px-4 py-4 text-xl sm:text-3xl lg:text-4xl">
                         Check Out The Code!
                     </div>

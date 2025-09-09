@@ -1,45 +1,24 @@
-'use client'
 
-import React from "react";
 import { Send } from 'lucide-react';
 
 export default function EmailSection() {
+    
     {/*
-    const [emailSubmitted, setEmailSubmitted] = useState(false);
-
-    const handleSubmit = async (e : React.FormEvent<HTMLFormElement>) => {
-        e.preventDefault();
-        const data = {
-            email: e.target.email.value,
-            subject: e.target.subject.value,
-            message: e.target.message.value,
-        }
+    async function handleSubmit(){
         
-        const JSONdata = JSON.stringify(data);
         const endpoint = "/api/send";
 
         // Form the request for sending data to the server
         const options = {
-            // The method is POST because we are sending data
-            method: 'POST',
-            // Tell the server we're sending JSON
+            method: "POST",
             headers: {
-                'Content-Type': 'application/json',
-            },
-            // Body of the request is the JSON data we created above
-            body: JSONdata,
+                "Content-Type": "application/json"
+            }
         }
-
-        const response = await fetch(endpoint, options);
-        const resData = await response.json();
-
-        if (resData.status === 'success'){
-            console.log('Message sent.');
-            setEmailSubmitted(true);
-        }
+      
     }
     */}
-
+    
     return(
         <section className="flex min-h-screen flex-col bg-[#00140d]">
             <div className="mx-6 sm:mx-10 w-fill mt-20 mb-40">
@@ -47,17 +26,7 @@ export default function EmailSection() {
                     <span className="text-[#4ba351]">Message</span> Me
                 </h1>
 
-                <form> {/*onSubmit={handleSubmit}*/}
-                    {/*
-                    {
-                        // If the email was submitted successfully, show a success message
-                        emailSubmitted && (
-                            <p className="text-green-500 text-sm mb-2">
-                                Email Sent Successfully
-                            </p>
-                        )
-                    }
-                    */}
+                <form>
 
                     {/* Email */}
                     <label htmlFor="email" className="block text-white mb-2 text-lg sm:text-xl">

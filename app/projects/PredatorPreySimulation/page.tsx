@@ -1,9 +1,8 @@
-import Link from 'next/link';
 import ImageCarousel from '../../ui/ImageCarousel';
 import { CalendarDays, CircleUserRound, CodeXml } from 'lucide-react';
 
-const images = ["GhostTraveller1.png", "GhostTraveller2.png", "GhostTraveller3.png", "GhostTraveller4.png", 
-                "GhostTraveller5.png", "GhostTraveller6.png", "GhostTraveller7.png", "PracticalPilot8.png"];
+const images = ["PredatorPreySimulation1.svg", "PredatorPreySimulation2.png", "PredatorPreySimulation3.png", "PredatorPreySimulation4.png", 
+                "PredatorPreySimulation5.png", "PredatorPreySimulation6.png"];
 
 
 
@@ -17,7 +16,7 @@ export default function Page()
 
                 {/* TITLE OF PROJECT */}
                 <h1 className="text-[#4ba351] font-bold text-4xl sm:text-5xl lg:text-6xl">
-                    Ghost Traveller
+                    Predator-Prey Simulation
                 </h1>
 
                 {/* PROJECT SPECS */}
@@ -26,7 +25,7 @@ export default function Page()
                     {/* Completion Time Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CalendarDays className="w-[2em] h-[2em]"/>
-                        March 2024
+                        February 2025
                     </div>
 
                     <div className="rounded-full bg-white px-15 py-0.25 sm:p-1 sm:px-1"/>
@@ -34,7 +33,7 @@ export default function Page()
                     {/* Project Team Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CircleUserRound className="w-[2em] h-[2em]"/>
-                        Solo Project
+                        2 Person Project
                     </div>
 
                     <div className="rounded-full bg-white px-15 py-0.25 sm:p-1 sm:px-1"/>
@@ -42,7 +41,7 @@ export default function Page()
                     {/* Programming Language Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CodeXml className="w-[2em] h-[2em]"/>
-                        Python
+                        Java
                     </div>
 
                 </div>
@@ -54,37 +53,46 @@ export default function Page()
                 <div className="flex flex-col gap-5 justify-start rounded-xl w-full text-white text-sm md:text-lg lg:text-xl">
                     {/* Intro Paragraph*/}
                     <p>
-                        Ghost Traveller - A 3D Point-And-Click puzzle game.
+                        <span className="text-[#4ba351] font-bold">Predator-Prey Simulation</span>  - Offically submitted under the name &quot;Legend Of Kölling: Breath of the BlueJ&quot;.
                     </p>
 
                     <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
+                        This project was a <span className="text-[#4ba351] font-bold">paired programming project</span> completed as part of <span className="text-[#4ba351] font-bold">coursework</span> for my Programming Practice And Applications module
+                        (PPA). Which achieved a solid 95%.
                     </p>
 
                     <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
+                        The project models a living world with <span className="text-[#4ba351] font-bold">8 unique species</span>. These include producers, herbivoursm and predators, each of which interact
+                        dynamically within randomly generated biomes (Grass, Water or Neutral). Each speicies was given unique breeding rules, food sources and
+                        environmental advantages, creating emergent behaviours where ecosystems can both flourish and collapse. If any of the species present goes
+                        extinct the simulation immeadiately concludes.
                     </p>
 
                     <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
+                        Below are some of the <span className="text-[#4ba351] font-bold">key features</span> of the project.
+                    </p>
+
+                    <p>
+                        A <span className="text-[#4ba351] font-bold">Day/Night cycle and Weather system</span> were added. This directly impacted animal activity, for example, predators would sleep at night, stopping
+                        all activity, whilst herbivours would continue un-distrubed, or how water based animals like <span className="text-[#4ba351] font-bold">&quot;Zora&quot;</span> and <span className="text-[#4ba351] font-bold">&quot;Fish&quot;</span> would gain a bonus to reproduction
+                        and movement during Rainfall and would remove the negative impact of the wrong biome.
+                    </p>
+
+                    <p>
+                       <span className="text-[#4ba351] font-bold">Biomes</span> where added in a random arrangement. These would give animals specalised for these biomes to have advantages in their corresponding biome but
+                       disadvantages in foreign biomes. Encouraging certain species to thrive in specific sections of the simulation.
+                    </p>
+
+                    <p>
+                       A <span className="text-[#4ba351] font-bold">Disease</span> feature was added, where an infection once started spreads via proximity, breeding with hosts and the consumption of a host of the disease.
+                       The infected organism will either recover or die, however, the disease was programmed to be very deadly and so will most often kill the host. <span className="text-[#4ba351] font-bold"> Infected
+                       organisms</span> are shown in <span className="text-[#4ba351] font-bold">bright red</span> in the simulation.
                     </p>
                 </div>
 
-                {/* BUTTON TO SEE GITHUB REPO */}
-                <Link href="/projects/PracticalPilot" className="px-2 py-2 w-fit rounded-xl bg-[#2d755c] text-white">
-                    <div className="bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-xl px-4 py-4 text-xl sm:text-3xl lg:text-4xl">
-                        Check Out The Code!
-                    </div>
-                </Link>
+                <p className="text-red-700 text-sm md:text-lg lg:text-xl font-bold">
+                    *No Github repo is provided for this project due to privacy regulations with Offically Graded KCL Courseworks
+                </p>
 
 
             </div>

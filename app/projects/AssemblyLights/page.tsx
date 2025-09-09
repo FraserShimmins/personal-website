@@ -1,8 +1,7 @@
-import Link from 'next/link';
 import ImageCarousel from '../../ui/ImageCarousel';
 import { CalendarDays, CircleUserRound, CodeXml } from 'lucide-react';
 
-const images = ["GhostTraveller1.png", "GhostTraveller2.png", "GhostTraveller3.png", "GhostTraveller4.png", 
+const images = ["AssemblyLights.png", "GhostTraveller2.png", "GhostTraveller3.png", "GhostTraveller4.png", 
                 "GhostTraveller5.png", "GhostTraveller6.png", "GhostTraveller7.png", "PracticalPilot8.png"];
 
 
@@ -17,7 +16,7 @@ export default function Page()
 
                 {/* TITLE OF PROJECT */}
                 <h1 className="text-[#4ba351] font-bold text-4xl sm:text-5xl lg:text-6xl">
-                    Ghost Traveller
+                    Assembly Lights
                 </h1>
 
                 {/* PROJECT SPECS */}
@@ -26,7 +25,7 @@ export default function Page()
                     {/* Completion Time Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CalendarDays className="w-[2em] h-[2em]"/>
-                        March 2024
+                        November 2024
                     </div>
 
                     <div className="rounded-full bg-white px-15 py-0.25 sm:p-1 sm:px-1"/>
@@ -42,7 +41,7 @@ export default function Page()
                     {/* Programming Language Stat */}
                     <div className="flex gap-4 items-center rounded-2xl text-white text-lg sm:text-2xl lg:text-3xl">
                         <CodeXml className="w-[2em] h-[2em]"/>
-                        Python
+                        ARM Assembly
                     </div>
 
                 </div>
@@ -54,37 +53,52 @@ export default function Page()
                 <div className="flex flex-col gap-5 justify-start rounded-xl w-full text-white text-sm md:text-lg lg:text-xl">
                     {/* Intro Paragraph*/}
                     <p>
-                        Ghost Traveller - A 3D Point-And-Click puzzle game.
+                        <span className="text-[#4ba351] font-bold">Assembly Lights</span> - My first attempt at <span className="text-[#4ba351] font-bold">real world</span> programming with <span className="text-[#4ba351] font-bold">Assembly code</span>!
                     </p>
 
                     <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
+                        This project was as a <span className="text-[#4ba351] font-bold">solo programming project</span> completed as <span className="text-[#4ba351] font-bold">coursework</span> for my Computer Systems module (CS1)
+                        Which achieved a solid [INSERT GRADE]%.
                     </p>
 
                     <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
+                        The assignent was to write a complete assembly program that controlled LEDs in a breadboard circuit, to encode,
+                        display and manipulate data. For which various tasks were assigned for me to complete and demonstrate mastery over.
                     </p>
 
                     <p>
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo vv
-                        Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo Demo demo 
+                        Below are some of the <span className="text-[#4ba351] font-bold">Key features</span> of the Assembly Lights program.
+                    </p>
+
+                    <p>
+                        A <span className="text-[#4ba351] font-bold">&quot;K-Number Display&quot;</span> is shown first. Where the LEDs sequentially outputted each figit
+                        of my KCL university ID in a binary format.
+                    </p>
+
+                    <p>
+                        A <span className="text-[#4ba351] font-bold">&quot;Initals Display&quot;</span> where my initals were encoded into a binary format provided for the project.
+                    </p>
+
+                    <p>
+                        A <span className="text-[#4ba351] font-bold">&quot;Morse Code Transmission&quot;</span>, where the first 3 letters of my name are then displayed by the LEDs. This being
+                        displayed via using precise on/off timings of the LEDs to achieve dots, dashes and spaces.
+                    </p>
+
+                    <p>
+                        <span className="text-[#4ba351] font-bold">&quot;Iteration Logic&quot;</span> is present also (Assigned as a challenge task), where the morse code loops 50 times. With every
+                        odd iteration in the loop displaying the letters normally, every even iteration showing the letters in reverse, and every 5th
+                        iteration appending a &quot;5&quot; to the end of the morse code pattern.
+                    </p>
+
+                    <p>
+                        Finally the program displays a <span className="text-[#4ba351] font-bold">&quot;Ping-Pong&quot; animation</span>, creating an infinite loopinf pattern across the LEDs where
+                        a single light apears to move back and forth across the LEDs smoothly.
                     </p>
                 </div>
 
-                {/* BUTTON TO SEE GITHUB REPO */}
-                <Link href="/projects/PracticalPilot" className="px-2 py-2 w-fit rounded-xl bg-[#2d755c] text-white">
-                    <div className="bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-xl px-4 py-4 text-xl sm:text-3xl lg:text-4xl">
-                        Check Out The Code!
-                    </div>
-                </Link>
+                <p className="text-red-700 text-sm md:text-lg lg:text-xl font-bold">
+                    *No Github repo is provided for this project due to privacy regulations with Offically Graded KCL Courseworks
+                </p>
 
 
             </div>

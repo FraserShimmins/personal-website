@@ -1,4 +1,4 @@
-//import { EmailTemplate } from '../../../components/EmailTemplate';
+import { EmailTemplate } from '../../components/message/EmailTemplate';
 import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -6,14 +6,10 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST() {
   try {
     const { data, error } = await resend.emails.send({
-      from: 'Fraser <onboarding@resend.dev>',
-      to: ['shimmins.f@gmail.com'],
-      subject: 'Test',
-      react: (
-        <div>
-            <p>Email Body</p>
-        </div>
-      ),
+      from: 'Fraser <message@mail.frasershimmins.com>',
+      to: ['frasershimmins@gmail.com'],
+      subject: 'Hello world',
+      react: EmailTemplate({ firstName: 'John' }),
     });
 
     if (error) {
