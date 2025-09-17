@@ -1,23 +1,30 @@
-import { EmailTemplate } from '../../components/message/EmailTemplate';
-import { Resend } from 'resend';
-
-const resend = new Resend(process.env.RESEND_API_KEY);
+import { render } from '@react-email/components';
+import nodemailer from 'nodemailer';
+import { EmailTemplate } from '@/app/components/message/EmailTemplate';
+import * as React from 'react';
+const transporter = nodemailer.createTransport({
+  host: 'smtp.resend.com',
+  port: 465,
+  secure: true,
+  auth: {
+    user: 'resend',
+    pass: process.env.RESEND_API_KEY || '',
+  },
+});
 
 export async function POST() {
-  try {
-    const { data, error } = await resend.emails.send({
-      from: 'Fraser <message@mail.frasershimmins.com>',
-      to: ['frasershimmins@gmail.com'],
-      subject: 'Hello world',
-      react: EmailTemplate({ firstName: 'John' }),
-    });
+  const emailHtml = await render(
+    React.createElement(EmailTemplate, { url: "https://example.com" })
+  );
 
-    if (error) {
-      return Response.json({ error }, { status: 500 });
-    }
+  const options = {
+    from: 'Fraser <message@mail.frasershimmins.com>',
+    to: ['frasershimmins@gmail.com'],
+    subject: 'Hello, World!',
+    html: emailHtml,
+  };
 
-    return Response.json(data);
-  } catch (error) {
-    return Response.json({ error }, { status: 500 });
-  }
+  await transporter.sendMail(options);
+
+  return Response.json({ success: true });
 }
