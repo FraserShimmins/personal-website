@@ -26,7 +26,7 @@ export default function EmailSection() {
                     <span className="text-[#4ba351]">Message</span> Me
                 </h1>
 
-                <form>
+                <form onSubmit={(e) => { e.preventDefault()}}>
 
                     {/* Email */}
                     <label htmlFor="email" className="block text-white mb-2 text-lg sm:text-xl">
@@ -49,7 +49,7 @@ export default function EmailSection() {
 
                         <button 
                             type="submit"
-                            onSubmit={() => handleSubmit()}
+                            onClick={() => handleSubmit()}
                             className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
                                 <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
                                     <Send className="ml-[-5px] w-[3em] h-[3em]"/>
