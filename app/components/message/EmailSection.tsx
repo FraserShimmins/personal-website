@@ -1,23 +1,23 @@
+"use client"
 
 import { Send } from 'lucide-react';
 
 export default function EmailSection() {
     
-    {/*
     async function handleSubmit(){
         
-        const endpoint = "/api/send";
+        const url = "/api/send";
 
-        // Form the request for sending data to the server
-        const options = {
+        const response = await fetch(url, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
-            }
-        }
-      
+            },
+        });
+
+        const text = await response.text();
+        console.log(text);
     }
-    */}
     
     return(
         <section className="flex min-h-screen flex-col bg-[#00140d]">
@@ -49,6 +49,7 @@ export default function EmailSection() {
 
                         <button 
                             type="submit"
+                            onSubmit={() => handleSubmit()}
                             className="px-1 py-1 w-fill rounded-3xl bg-[#2d755c] text-white">
                                 <div className="flex items-center justify-center gap-4 bg-[#00140d] hover:bg-slate-800 active:bg-slate-900 rounded-3xl px-5 py-2 text-base sm:text-lg lg:text-xl">
                                     <Send className="ml-[-5px] w-[3em] h-[3em]"/>
