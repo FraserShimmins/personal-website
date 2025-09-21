@@ -1,5 +1,3 @@
-import React from 'react';
-import { MagnifyingGlassIcon, FilmIcon } from "@heroicons/react/24/outline";
 import Link from 'next/link';
  
 export default function ProjectCard({ imgUrl, pageUrl, title, description }){
